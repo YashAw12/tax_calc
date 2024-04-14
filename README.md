@@ -52,7 +52,8 @@ Once you have the application running in your web browser, you can use the Tax C
 - JavaScript
 - jQuery
 - Bootstrap
-
+## Intro Video  
+https://drive.google.com/file/d/1l56o831TYtw75HhtCEUj1GYTkoLKphjA/view?usp=sharing
 ## Credits
 
 This project was created as part of a coding challenge. Original design and requirements provided by the challenge.
