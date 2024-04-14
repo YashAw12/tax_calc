@@ -5,6 +5,9 @@
 
 This is a simple web application for calculating taxes based on user input. Users can enter their gross annual income, extra income, deductions, and select their age bracket to calculate their tax amount.
 
+Live Demo
+You can try out the Tax Calculator live at https://yashaw12.github.io/tax_calc/.
+
 ## Installation
 
 To run this application locally, follow these steps:
