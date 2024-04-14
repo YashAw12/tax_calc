@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <h1 class="text-center">Tax Calculator</h1>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <form id="taxForm">
+            <div class="form-group">
+                <label for="income">
+                    Gross Annual Income (INR):
+                    <span class="info-icon" id="incomeInfo" title="Gross annual income is your total salary in a year without any deductions">i</span>
+                </label>
+                <input type="text" id="income" class="form-control" required>
+                <span class="error-icon" id="incomeError" title="Gross Annual Income must be a valid number">!</span>
+                <div class="info-text" id="incomeInfoText">Gross annual income is your total salary in a year without any deductions.</div>
+            </div>
+            <div class="form-group">
+                <label for="extraIncome">
+                    Extra Income (INR):
+                    <span class="info-icon" id="extraIncomeInfo" title="Income generated apart from salary">i</span>
+                </label>
+                <input type="text" id="extraIncome" class="form-control">
+                <span class="error-icon" id="extraIncomeError" title="Extra Income must be a valid number">!</span>
+                <div class="info-text" id="extraIncomeInfoText">Income generated apart from salary.</div>
+            </div>
+            <div class="form-group">
+                <label for="deductions">
+                    Deductions (INR):
+                    <span class="info-icon" id="deductionsInfo" title="Deductions in your salary">i</span>
+                </label>
+                <input type="text" id="deductions" class="form-control">
+                <span class="error-icon" id="deductionsError" title="Deductions must be a valid number">!</span>
+                <div class="info-text" id="deductionsInfoText">Deductions in your salary.</div>
+            </div>
+            <div class="form-group">
+                <label for="age">
+                    Age:
+                    <span class="info-icon" id="ageInfo" title="Select the age bracket you fall in">i</span>
+                </label>
+                <select id="age" class="form-control">
+                    <option value="<40">&lt;40</option>
+                    <option value=">=40 & <60">&ge;40 &lt;60</option>
+                    <option value=">=60">&ge;60</option>
+                </select>
+                <span class="error-icon" id="ageError" title="Please select an age group">!</span>
+                <div class="info-text" id="ageInfoText">Select the age bracket you fall in.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate Tax</button>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Tax Calculator</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tax Calculation Result</h2>
+            <p id="taxResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
