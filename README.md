@@ -58,6 +58,8 @@ https://drive.google.com/file/d/1l56o831TYtw75HhtCEUj1GYTkoLKphjA/view?usp=shari
 
 This project was created as part of a coding challenge. Original design and requirements provided by the challenge.
 
+## Screenshots
+
 
 ![Screenshot (359)](https://github.com/YashAw12/tax_calc/assets/117550570/3d323b10-2add-40b8-8033-44640883c44b)
 ![Screenshot (360)](https://github.com/YashAw12/tax_calc/assets/117550570/f4596fd9-05e4-4303-8fa3-2e1b4f1cfeb4)
